@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Đăng ký thành viên</title>
+</head>
+<body>
+	<form id="frmRegister" name="frmRegister" action="" method="post" style="margin: 10px 25%">
+		<h1>ĐĂNG KÝ THÀNH VIÊN</h1>
+		<table border="0" width="100%" cellspacing="0" cellpadding="5">
+			<tr>
+				<td><label for="hoten">Họ và tên</label></td>
+				<td>
+					<input type="text" name="hoten" id="hoten" placeholder="Nhập họ và tên...">
+				</td>
+			</tr>
+			<tr>
+				<td><label for="tenDangNhap">Tên đăng nhập </label></td>
+				<td>
+					<input type="text" name="tenDangNhap" id="tenDangNhap" placeholder="Nhập tên đăng nhập...">
+				</td>
+			</tr>
+			<tr>
+				<td><label for="matKhau">Mật khẩu</label></td>
+				<td>
+					<input type="password" name="matKhau" id="matKhau" placeholder="Nhập mật khẩu...">
+				</td>
+			</tr>
+			<tr>
+				<td><label for="anhDaiDien">Ảnh đại diện</label></td>
+				<td>
+					<input type="file" name="anhDaiDien" id="anhDaiDien" placeholder="Chọn ảnh đại diện">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="thuDienTu">Thư điện tử </label>
+				</td>
+				<td>
+					<input type="email" name="thuDienTu" id="thuDienTu" placeholder="Nhập thư điện tử..">
+				</td>
+			</tr>
+			<tr>
+				<td><label for="">Giới tính</label></td>
+				<td>
+					<input type="radio" name="gioiTinh" id="gtNam" checked> 
+					<label for="gtNam">Nam </label>
+					<input type="radio" name="gioiTinh" id="gtNu" > 
+					<label for="gtNu">Nữ </label>
+					<input type="radio" name="gioiTinh" id="gtKhac" > 
+					<label for="gtKhac">Khác </label>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="soThich">Sở thích</label></td>
+				<td>
+					<input type="checkbox" name="sothich" id="ckBongDa" checked>
+					<label for="ckBongDa">Bóng đá</label>
+					<input type="checkbox" name="sothich" id="ckXemPhim">
+					<label for="ckXemPhim">Xem phim</label> <br>
+					<input type="checkbox" name="sothich" id="ckDuLich">
+					<label for="ckDuLich">Du lịch</label>
+					<input type="checkbox" name="sothich" id="ckBoiLoi">
+					<label for="ckBoiLoi">Bơi lội</label> 
+					<input type="checkbox" name="sothich" id="ckNgheNhac">
+					<label for="ckNgheNhac">Nghe nhạc</label> 
+				</td>
+			</tr>
+			<tr>
+				<td><label for="queQuan">Quê quán</label></td>
+				<td>
+					<select name="queQuan" id="queQuan">
+						<option>---Chọn tỉnh thành---</option>
+						<option value="1">Hà nội</option>
+						<option value="2">Hải phòng</option>
+						<option value="3">Đà nẵng</option>
+						<option value="4">Nha trang</option>
+						<option value="5">Tp. Hồ chí minh/option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="diaChi">Địa chỉ</label></td>
+				<td>
+					<input type="text" name="diaChi" id="diaChi" placeholder="Nhập địa chỉ...">
+				</td>
+			</tr>
+			<tr>
+				<td><label for="dienThoai">điện thoại</label></td>
+				<td>
+					<input type="tel" name="dienThoai" id="dienThoai" placeholder="Nhập điện thoại...">
+				</td>
+			</tr>
+			<tr>
+				<td><label for="moTa">Mô tả ngắn gọn</label></td>
+				<td>
+					<textarea cols="50" rows="5">Mô tả</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="submit" name="btRegister" id="btRegister" value="Đăng ký"> 
+					<input type="reset" name="btLamlai" id="btLamlai" value="Làm lại">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

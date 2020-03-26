@@ -1,0 +1,60 @@
+/*các bộ chọn thuộc tính cơ bản*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #ccc;
+	margin: 10px 10%;
+}
+
+/*bộ chọn tag01 tag02 => chọn tất cả các thành phần tag02 trong tag02*/
+section img {
+	width: 100%;
+}
+/*bộ chọn tag01 > tag02 => chon tất cả các thành phần tag02 có cha là tag01*/
+section > img {
+	border-radius: 10px;
+	padding: 20px;
+	width: calc(100% - 40px);
+}
+/*bộ chọn tag01, tag02*/
+body, html, section, h1{
+	font-size: 36px;
+}
+/*Bộ chọn tag01 + tag02 => chọn tất cả các thành phần tag02 đặt kế vào sau thành phần tag01*/
+aside + div{
+	color: red;
+	font-size: 2rem;
+}
+/*bộ chọn ngữ cảnh*/
+/*:hover;*/
+div:hover{
+	color: blue;
+	cursor: pointer;
+}
+div:first-letter{
+	font-size: 5rem;
+}
+div:first-line{
+	/*line-height: .2rem;*/
+}
+
+/*Bộ chọn theo quy tắc thuộc tính = giá trị*/
+input[type="text"]{
+	border:1px solid red;
+	padding: 5px 20px;
+}
+input[class~="abc"]{
+	background-color: green;
+}
+
+/*chọn tag01~tag02 => chọn tất cả các thành phần tag02 khi có thành phần tag01 ở trước*/
+
+p ~ span {
+	color: red;
+}
+p + span {
+	font-size: 1.5rem;
+	color: blue;
+}

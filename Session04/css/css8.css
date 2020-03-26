@@ -1,0 +1,75 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-size: 16px;
+}
+
+/*thuộc tính màu*/
+h1{
+	background: #484848;
+	color: #fff;
+}
+/*các thuộc tính khoảng cách lề*/
+h1{
+	/*margin: 10px 20px 10px 25px;*/
+	margin:30px 10%;
+	padding: 10px 25px;
+}
+
+/*các thuộc tính liên quan đến khung viền, độ rộng*/
+
+section#s-1{
+	margin: 10px 10%;
+	border-top: 2px solid #000;
+	border-bottom: 1px solid #ccc;
+	background-color: green;
+	color: #fff;
+	padding: 10px;
+	height: 300px;
+}
+#s-1 p:first-line{
+	font-size: 30px;
+	color: yellow;
+}
+#s-1 p:first-letter{
+	font-size: 50px;
+	color: red;
+}
+section p{
+	font-size: 18px;
+	line-height: 1.5;
+	letter-spacing: 2px;
+
+}
+#s-2{
+	position: relative;
+	top: 50px;
+	left: 50px;
+}
+section{
+	position: relative;
+}
+/*ẩn hiện phần tử*/
+/*
+	display
+	visiblity
+	opacity
+
+ */
+.abc img{
+	display: none;
+	/*visibility: hidden;*/
+	/*opacity: 0;*/
+}
+#s-1:hover ~ .abc img {
+	display: block;
+	/*visibility: visible;*/
+	/*opacity: 1;*/
+	width: 500px;
+}
+#s-1 {
+	font-size: 30px;
+}
+#s-1 p{
+	font-size: .8rem;
+}

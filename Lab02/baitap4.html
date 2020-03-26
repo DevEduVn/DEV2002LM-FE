@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tạo menu với ul , li</title>
+	<style type="text/css">
+		*{
+			margin:0px;
+			padding: 0px;
+		}
+		ul{
+			margin:10px;
+			list-style: none;
+			background-color: red;
+			height: 50px;
+			width: 80%;
+			border-radius: 15px;
+		}
+		ul > li {
+			float: left;
+		}
+		ul > li > a{
+			line-height: 50px;
+			padding: 0px 25px;
+			text-decoration:none;
+			color: yellow;
+		}
+		ul > li {
+			border-right: 1px solid #ccc;
+		}
+		/*ul >li:first-child{
+			border-bottom-left-radius: 5px; 
+			border-top-left-radius: 5px;
+		}*/
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href="#" title="Trang chủ">Trang chủ</a></li>
+		<li><a href="#" title="Tin tức">Tin tức</a></li>
+		<li><a href="#" title="Sản phẩm">Sản phẩm</a></li>
+		<li><a href="#" title="Khóa học">Khóa học</a></li>
+		<li><a href="#" title="Liên hệ">Liên hệ</a></li>
+		<li><a href="#" title="Đăng ký">Đăng ký</a></li>
+		<li><a href="#" title="Đăng nhập">Đăng nhập</a></li>
+	</ul>
+</body>
+</html>

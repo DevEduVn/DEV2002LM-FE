@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form trong HTML5</title>
+	<style type="text/css">
+		form{
+			background-color: #ccc;
+			min-height: 300px;
+			margin:10px 20%;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<form action="" method="get" id="frmForm1" name="frmForm1">
+		<!-- các điểu khiển trên form -->
+		<p>
+			Nhập văn bản: type = text 
+			<input type="text" name="hoten" id="hoten" 
+				placeholder="Nhập họ tên..."  value="Chung Trịnh">
+		</p>
+		<p>
+			Nhập mật khẩu: type = password
+			<input type="password" name="matkhau" id="matkhau" placeholder="Nhập mật khẩu...">
+		</p>
+		<p>
+			Điều khiển ẩn type = hidden
+			<input type="hidden" name="masp" id="masp" value="">
+		</p>
+		<p>
+			Điều khiển type=checkbox
+			<label for="">Sở thích</label>
+			<br>
+			<input type="checkbox" name="ckDuLich" id="DuLich" > 
+			<label for="DuLich">Du dịch</label>
+			<br>
+			<input type="checkbox" name="ckBongDa" id="BongDa"> 
+			<label for="BongDa">Bóng đá</label>
+		</p>
+		<p>
+			Điểu khiển type=radio (Lựa chọn 1 trong nhiều khả năng) <br>
+			<label>Giới tính:</label>
+			<input type="radio" name="Gioitinh" id="Nam" checked value="1"> 
+			<label for="Nam">Nam</label>
+			<input type="radio" name="Gioitinh" id="Nu"  value="0"> 
+			<label for="Nu">Nữ</label>
+			<input type="radio" name="Gioitinh" id="Khac" value=""> 
+			<label for="Khac">Khác</label>
+		</p>
+		<p>
+			Điểu khiển type=button 
+			<input type="button" name="chon" value="Chọn ảnh" id="chon">
+		</p>
+		<p>
+			<input type="submit" name="btnDangKy" id="btnDangKy" value="Đăng ký">
+			<input type="reset" name="btnLamLai" id="btnLamLai" value="Làm lại">
+		</p>
+		<p>
+			Chọn ảnh: type=file 
+			<input type="file" name="chonanh" id="chonanh">
+		</p>
+		<p>
+			Chọn màu: type=color 
+			<input type="color" name="chonmau" id="chonmau" value="#ff0000">
+		</p>
+		<p>
+			Chọn màu: type=date / datetime / ...
+			<input type="date" name="chonngay" id="chonngay" value="">
+
+		</p>
+		<p>
+			Chọn thời gian: type=time / ...
+			<input type="time" name="chonThoiGian" id="chonThoiGian">
+		</p>
+		<p>
+			Hộp thư: type=email 
+			<input type="email" name="hopthu" id="hopThu" placeholder="chungtrinh@gmail.com">
+		</p>
+		<p>
+			Nhập tuổi: type=number
+			<input type="number" name="tuoi" id="tuoi" max="60" min="6" value="18">
+		</p>
+		<p>
+			type=range
+			<input type="range" name="a" max="60" min="6" value="18">
+		</p>
+		<p>
+			Chọn tỉnh thành: select 
+			<select name="tinhThanh" id="tinhThanh">
+				<option>--Chọn tỉnh--</option>'
+				<option value="Hanoi">Hà nội</option>
+				<option value="TpHCM">Tp. Hồ chí minh </option>
+				<option value="Danang">Đà nẵng</option>
+				<option value="Haiphong">Hải phòng</option>
+				
+			</select>
+
+		</p>
+		<p>
+			Địa chỉ: textarea 
+			<textarea name="diachi" id="diachi" placeholder="Địa chỉ" rows="5" cols="50"></textarea>
+		</p>
+	</form>
+</body>
+</html>

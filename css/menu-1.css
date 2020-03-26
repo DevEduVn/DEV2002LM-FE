@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav {
+    background: #484848;
+}
+nav ul {
+    display: flex;
+    margin: .5rem 5%;
+    /* justify-content: flex-start; */
+    align-items: center;
+}
+nav ul li {
+    border-right: 1px solid #ccc;
+}
+nav ul li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+}
+.dang-ky, .dang-nhap{
+    align-self: flex-end;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Đăng nhập với google</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="signIn.css">
+</head>
+<body>
+	<h1 align="center">Bài thực hành tổng hợp <a href="">#HTML5</a> <a href="">#CSS3</a> <a href="">#Javascript</a> <a href="">#jQuery</a> <a href="">#bootstrap</a></h1>
+	<div class="wrapper-signIn">
+		<div class="logo justify-content-center d-flex">
+			<img src="googlelogo_color_116x41dp.png" alt="">
+			<img src="https://devmaster.edu.vn/images/logo.png" alt="Viện Công Nghệ Và Đào Tạo Devmaster">
+		</div>
+		<div class="heading">
+			<h1> Đăng nhập </h1>
+			<p> Sử dụng tài khoản google của bạn </p>
+		</div>
+		<div class="box-form">
+			<form action="">
+				<div class="box-input">
+					<span class="first" >Email hoặc điện thoại</span>
+					<input type="text" placeholder="" name="emailOrPhone">
+				</div>
+				<div class="box-input">
+					<span   class="first" >Nhập mật khẩu</span>
+					<input type="password" placeholder="" name="password">
+				</div>
+			</form>
+		</div>
+		<div class="note-login">
+			<p> Đây không phải là máy tính cảu bạn? Hãy sử dụng chế độ khách để đăng nhập một cách riêng tư. <a href="#"> Tìm hiều thêm </a> </p>
+		</div>
+		<div class="d-flex box-event justify-content-between">
+			<p class="pt-2 m-0"> <a href="#"> Tạo tài khoản </a></p>
+			<button class="btn-next"> Đăng nhập </button>
+		</div>
+	</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$().ready(function(){
+		$('.box-input input').focus(function(){
+			$(this).siblings('span').removeClass('first');  
+			$(this).siblings('span').addClass('last'); 
+			$(this).siblings('span').css('animation',''); 
+			$(this).siblings('span').css('animation','mymove .2s 1'); 
+		});
+		$('.box-input span').click(function(){
+			$(this).siblings('input').focus();
+		});
+		$('.box-input input').blur(function(){
+			if($(this).val()==""){
+				$(this).siblings('span').removeClass('last');
+				$(this).siblings('span').addClass('first');
+				$(this).siblings('span').css('animation','');
+				$(this).siblings('span').css('animation','mymoveb .2s 1');
+			}
+		});
+	});
+</script>
+</body>
+</html>

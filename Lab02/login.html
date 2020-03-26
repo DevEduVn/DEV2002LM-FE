@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>login - table and form</title>
+	<style type="text/css">
+		form{
+			margin: 20px 35%;
+			border-radius: 10px;
+			border:1px solid #ddd;
+			padding: 25px;
+		}
+		form input{
+			border:1px solid #ddd;
+			border-radius: 5px; 
+			padding: 10px;
+		}
+		.input{
+			width:calc(100% - 25px);
+		}
+		.dangnhap{
+			position: absolute;
+			right: 10px;
+			background-color: #1a73e8;
+			color: #fff;
+		}
+		tr td{
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<form id="frmLogin"  name="frmLogin" action="" method="post">
+		<table width="100%" cellpadding="10px">
+			<tr>
+				<td align="center">
+					<img src="https://devmaster.edu.vn/images/logo.png" alt="Devmaster Acaemy">
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<h3>Đăng nhập</h3>
+					<p>Sử dụng tài khoản google của bạn </p>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<input class="input" type="text" name="taiKhoan" id="taiKhoan" placeholder="Email hoặc điện thoại">
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<input class="input" type="password" name="matKhau" id="matKhau" placeholder="Nhập mật khẩu">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Đây không phải là máy tính cảu bạn? Hãy sử dụng chế độ khách để đăng nhập một cách riêng tư. 
+					<a href="#" title="Tìm hiều thêm" target="_blank">Tìm hiều thêm</a> 
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a class="taoTK" href="#" title="Tạo tài khoản ">Tạo tài khoản</a>
+					<input class="dangnhap" type="submit" name="btDangNhap" id="btDangNhap" value="Đăng nhập">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

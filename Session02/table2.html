@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Table cơ bản - và các thuộc tính</title>
+</head>
+<body>
+	<h1>Sử dụng phần tử table trong html5 </h1>
+	<hr>
+	<pre>
+		- tạo bảng: table 
+		- vùng tiêu đề: thead
+			-> tạo hàng: tr
+			-> tạo cột: th 
+		- Vùng nội dung: tbody 
+			-> tạo hàng: tr
+			-> tạo cột : td
+		- Vùng chứa các nội dung  thống kê bảng: tfoot 
+			-> tr , th , td 
+		- attribute: align: center, left, right, justify
+	</pre>
+	<table width="80%" border="1rem" cellspacing="5px" cellpadding="10px" align="center">
+		<thead>
+			<tr>
+				<th>Họ tên</th>
+				<th>Tuổi</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Chung Trịnh</td>
+				<td align="right">4.0</td>
+			</tr>
+			<tr>
+				<td>Devmaster Academy</td>
+				<td align="right">5.0</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th>Trung bình:</th>
+				<th>4.5</th>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>

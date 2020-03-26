@@ -1,0 +1,26 @@
+/*áp dụng với thuộc tính id*/
+#abc{
+	background-color: yellow;
+}
+/*áp dụng quy tắc css cho thẻ html*/
+img{
+	width: 100%;
+}
+/*áp dụng quy tắc với thuộc tính class của phần tử html*/
+.banner{
+	padding: 10px;
+	margin: 10px 10%;
+	border:1px solid #ccc;
+}
+.khung{
+	background-color: #ccc;
+}
+.text{
+	font-size: 20px;
+	color: red;
+	padding: 20px 10%;
+}
+.br-10{
+	border:1px solid red;
+	border-radius: 10px;
+}
