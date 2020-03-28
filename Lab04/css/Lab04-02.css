@@ -1,0 +1,56 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+header {
+	margin: 5px 10%;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav{
+	background-color: #555;
+}
+ul{
+	margin: 0 10%;
+	display: flex;
+	list-style: none;
+	justify-content: flex-start;
+
+}
+ul li:hover{
+	background-color:#484848 ;
+}
+ul li a{
+	display: block;
+	padding: 10px 25px;
+	color: #fff;
+	text-decoration: none;
+}
+
+section#sideBar{
+	display: flex;
+}
+#sideBar aside{
+	width: 75%;
+}
+#sideBar article{
+	width: 25%;
+	background-color: #ddd;
+}
+aside img{
+	width: 100%;
+}
+
+#sideBar ul{
+	display: flex;
+	flex-flow: column;
+}
+#sideBar li{
+	border-bottom:1px solid #fff;
+}
+#sideBar a{
+	color: #555;
+}
